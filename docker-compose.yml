@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3308:3308"
+    volumes:
+       - my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: m
+      MYSQL_DATABASE: pucsdStudents
+      MYSQL_USER: pucsd
+      MYSQL_PASSWORD: pucsd
+    command: mysqld
+
+
+
+ 
